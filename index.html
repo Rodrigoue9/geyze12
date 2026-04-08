@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Certificado - Laser Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gerador de Certificado</h1>
+            <p>Preencha os dados abaixo para gerar o certificado.</p>
+        </header>
+
+        <main>
+            <section class="controls">
+                <div class="input-group">
+                    <label for="studentName">Nome do Aluno</label>
+                    <input type="text" id="studentName" placeholder="Digite o nome completo" autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <label for="date">Data (ex: 08 de Abril de 2026)</label>
+                    <input type="text" id="date" placeholder="Digite a data" autocomplete="off">
+                </div>
+                <button id="downloadBtn" class="btn-primary">Baixar Certificado</button>
+            </section>
+
+            <section class="preview">
+                <div class="canvas-wrapper">
+                    <canvas id="certificateCanvas"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="baseImage.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
