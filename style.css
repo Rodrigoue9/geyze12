@@ -93,8 +93,7 @@ main {
     border-color: var(--primary-color);
 }
 
-.btn-primary {
-    background-color: var(--primary-color);
+.btn-primary, .btn-pdf, .btn-word {
     color: white;
     padding: 15px;
     border: none;
@@ -103,16 +102,43 @@ main {
     font-weight: 700;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s;
-    margin-top: 10px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
 }
 
 .btn-primary:hover {
     background-color: #122a46;
-    transform: translateY(-2px);
 }
 
-.btn-primary:active {
+.btn-pdf {
+    background-color: #e74c3c;
+}
+
+.btn-pdf:hover {
+    background-color: #c0392b;
+}
+
+.btn-word {
+    background-color: #2b5797;
+}
+
+.btn-word:hover {
+    background-color: #1e3e6d;
+}
+
+.btn-primary:active, .btn-pdf:active, .btn-word:active {
     transform: translateY(0);
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .btn-primary.success {
